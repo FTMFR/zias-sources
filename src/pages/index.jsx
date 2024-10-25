@@ -1,13 +1,13 @@
-import Banner from '../components/Banner/Banner'
-
-
+import Banner from "../components/Banner/Banner";
+import Header from "../components/Header/Header";
 
 function HomePage() {
   return (
-<Banner />
-
+    <>
+      <Banner />
+      <Header />
+    </>
   );
 }
-
 
 export default HomePage;

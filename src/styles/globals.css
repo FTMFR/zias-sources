@@ -1,8 +1,6 @@
-@tailwind base;      
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 /* font faces */
 @font-face {
@@ -68,12 +66,12 @@ body {
   --R12: 12px;
   --R14: 14px;
   --R16: 16px;
-  --B8: 8px bold;
-  --B10: 10px bold;
-  --B12: 12px bold;
-  --B14: 14px bold;
-  --B16: 16px bold;
-  --B40: 40px bold;
+  --B8: 8px;
+  --B10: 10px;
+  --B12: 12px;
+  --B14: 14px;
+  --B16: 16px;
+  --B40: 40px;
 
   /* break points */
   /* max-width */
@@ -93,10 +91,22 @@ body {
   align-items: center;
   justify-items: center;
   margin: auto;
-
 }
 
+.banner {
+  background-color: var(--primary75);
+}
 
-.banner{
-    background-color: var(--primary75);
+.zias {
+  font-size: var(--B40);
+  font-weight: bold;
+  color: var(--primary75);
+}
+
+.bg-brand-primary {
+  background-color: var(--primary75);
+}
+
+.text-14B{
+    font-size: var(--B14);
 }
