@@ -140,3 +140,30 @@ body {
   border-radius: 15px;
   background-color: var(--gray700);
 }
+
+.divider {
+  border: 1px solid var(--gray500);
+}
+
+
+/* product cart component */
+.border-gray300{
+  border: 2px solid var(--gray300);
+
+}
+
+.text-gray500{
+  color: var(--gray500);
+}
+
+/* see more btn component styles */
+.btn-seeMore{
+  width: 75px;
+  height: 25px;
+  background-color: var(--white);
+  color: var(--primary200);
+  border: 1px solid var(--primary200);
+  border-radius: 5px;
+  font-size: var(--R10);
+  
+}
