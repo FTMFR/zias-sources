@@ -83,20 +83,17 @@ body {
 
 /*  */
 .container {
-  width: 80%;
-  height: 50px;
+  width: 90%;
   text-align: center;
-  background-color: gray;
-  display: grid;
-  align-items: center;
-  justify-items: center;
   margin: auto;
 }
 
+/* banner component styles */
 .banner {
   background-color: var(--primary75);
 }
 
+/* header component styles */
 .zias {
   font-size: var(--B40);
   font-weight: bold;
@@ -109,4 +106,18 @@ body {
 
 .text-14B{
     font-size: var(--B14);
+}
+
+/* search box */
+
+.searchBoxText{
+    color: var(--gray600);
+}
+
+.searchBoxZias {
+    color: var(--primary75);
+}
+
+.searchBox{
+    background-color: var(--gray200);
 }
