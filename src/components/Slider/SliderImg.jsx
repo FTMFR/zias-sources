@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Slider from './Slider'
+import ScrollSlidersBtn from '../Btns/ScrollSlidersBtn'
 
 const SliderImg = () => {
   return (
@@ -24,7 +24,7 @@ const SliderImg = () => {
            />
          </div>
          <div className="absolute bottom-[5%] right-[36%]">
-           <Slider />
+           <ScrollSlidersBtn />
          </div>
        </div>
    </>
