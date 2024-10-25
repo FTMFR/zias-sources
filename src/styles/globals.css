@@ -1,0 +1,102 @@
+@tailwind base;      
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* font faces */
+@font-face {
+  font-family: "IRAN";
+  src: url("../fonts/IRAN.woff2") format("woff2"),
+    url("../fonts/IRAN.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRAN";
+  src: url("../fonts/IRAN_SemiBold.woff2") format("woff2"),
+    url("../fonts/IRAN_SemiBold.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "IRAN";
+  src: url("../fonts/IRANBlack.woff2") format("woff2"),
+    url("../fonts/IRANBlack.woff") format("woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "IRAN";
+  src: url("../fonts/IRANBold.woff2") format("woff2"),
+    url("../fonts/IRANBold.woff") format("woff");
+  font-weight: 700;
+  font-style: bold;
+}
+
+body {
+  font-family: "IRAN", sans-serif !important;
+}
+
+/* variables */
+:root {
+  /* color variables */
+  --primary25: #e35556;
+  --primary50: #dc3941;
+  --primary75: #d4002b;
+  --primary100: #b80024;
+  --primary200: #dc3941;
+
+  --black: #0c0c0c;
+  --white: #ffffff;
+
+  --gray50: #f9f9f9;
+  --gray100: #f6f6f6;
+  --gray200: #ededed;
+  --gray300: #cbcbcb;
+  --gray400: #b4b4b4;
+  --gray500: #9e9e9e;
+  --gray600: #717171;
+  --gray700: #505050;
+  --gray800: #444444;
+  --gray900: #2d2d2d;
+
+  /* font style variables for max-width: 768*/
+  --R8: 8px;
+  --R10: 10px;
+  --R12: 12px;
+  --R14: 14px;
+  --R16: 16px;
+  --B8: 8px bold;
+  --B10: 10px bold;
+  --B12: 12px bold;
+  --B14: 14px bold;
+  --B16: 16px bold;
+  --B40: 40px bold;
+
+  /* break points */
+  /* max-width */
+  --sm: 768px;
+  --md: 991px;
+  /* min-width */
+  --lg: 992px;
+}
+
+/*  */
+.container {
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  background-color: gray;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: auto;
+
+}
+
+
+.banner{
+    background-color: var(--primary75);
+}
