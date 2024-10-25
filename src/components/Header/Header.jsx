@@ -23,7 +23,7 @@ const Header = () => {
           <Image
             width="28"
             height="25"
-            src="/images/vector.svg"
+            src="/images/notif.svg"
             alt="notifications"
           />
         </div>
