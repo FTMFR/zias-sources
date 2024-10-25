@@ -8,7 +8,7 @@ const SearchBox = () => {
         height="24"
         width="24"
         src="/images/Search 1.svg"
-        alt="search icon"
+        alt="search icon" 
       />
       <div className="flex gap-1 searchBoxText">
         جستجو در
