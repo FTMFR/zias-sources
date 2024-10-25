@@ -104,20 +104,39 @@ body {
   background-color: var(--primary75);
 }
 
-.text-14B{
-    font-size: var(--B14);
+.text-14B {
+  font-size: var(--B14);
 }
 
 /* search box */
 
-.searchBoxText{
-    color: var(--gray600);
+.searchBoxText {
+  color: var(--gray600);
 }
 
 .searchBoxZias {
-    color: var(--primary75);
+  color: var(--primary75);
 }
 
-.searchBox{
-    background-color: var(--gray200);
+.searchBox {
+  background-color: var(--gray200);
+}
+
+/* slider component styles */
+.border-gray-slider {
+  border: var(--gray500) 2px solid;
+}
+
+.circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--gray300);
+}
+
+.circle.active {
+  width: 12px;
+  height: 8px;
+  border-radius: 15px;
+  background-color: var(--gray700);
 }
