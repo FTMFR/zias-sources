@@ -1,14 +1,16 @@
 import Banner from "../components/Banner/Banner";
+import Blogs from "../components/Blogs/Blogs";
 import SeeMoreBtn from "../components/Btns/SeeMoreBtn";
 import Header from "../components/Header/Header";
 import ProductsCart from "../components/Product/ProductsCart";
 import SearchBox from "../components/SearchBox/SearchBox";
 import SliderImg from "../components/Slider/SliderImg";
+import Image from "next/image";
 
 function HomePage() {
   return (
     <>
-    {/* ‌banner goes here */}
+      {/* ‌banner goes here */}
       <Banner />
       {/* add container class for create a container with width 80% */}
       <div className="container">
@@ -28,8 +30,20 @@ function HomePage() {
           </div>
           {/* will add ui in figma */}
           <div className="flex gap-2 overflow-hidden justify-between my-2">
+            <Image
+              width="25"
+              height="25"
+              src="/images/arrow-right.svg"
+              alt="arrow-right"
+            />
             <ProductsCart />
             <ProductsCart />
+            <Image
+              width="25"
+              height="25"
+              src="/images/arrow-left.svg"
+              alt="arrow-left"
+            />
           </div>
         </div>
         <div className="divider"></div>
@@ -41,7 +55,19 @@ function HomePage() {
           </div>
           {/* will add ui in figma */}
           <div className="flex gap-2 overflow-hidden justify-between my-2">
-            
+            <Image
+              width="25"
+              height="25"
+              src="/images/arrow-right.svg"
+              alt="arrow-right"
+            />
+            <Blogs />
+            <Image
+              width="25"
+              height="25"
+              src="/images/arrow-left.svg"
+              alt="arrow-left"
+            />
           </div>
         </div>
       </div>
