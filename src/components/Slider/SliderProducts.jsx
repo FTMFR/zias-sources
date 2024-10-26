@@ -15,9 +15,9 @@ const SliderProducts = () => {
     const itemWidth = containerRef.current.children[0].offsetWidth;
     const currentIndex = -Math.round(scrollLeft / itemWidth);
     setCenterIndex(currentIndex);
-    console.log("Item Width:", itemWidth);
-    console.log("Scroll Left:", scrollLeft);
-    console.log("Current Index:", currentIndex);
+    // console.log("Item Width:", itemWidth);
+    // console.log("Scroll Left:", scrollLeft);
+    // console.log("Current Index:", currentIndex);
   };
 
   useEffect(() => {
