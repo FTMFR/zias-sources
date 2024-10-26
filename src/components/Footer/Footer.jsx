@@ -12,6 +12,7 @@ const Footer = () => {
             <div className="divider-sm"></div>
             <div className="text-[8px] flex flex-row gap-3 mt-1">
               <div className="flex flex-col gap-1">
+                {/* link all of them to their pages */}
                 <div>صفحه اصلی</div>
                 <div>محصولات</div>
                 <div>مجله فشن</div>
@@ -24,7 +25,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-2 flex-1 justify-center items-center">
+            {/* link tel number to call */}
             <div className="text-[8px] ">تلفن پشتیبانی: 9899512452+</div>
+            {/* copy this email to keybord */}
             <div className="text-[8px] ">ایمیل: zias@gmail.com</div>
           </div>
           <div>
@@ -33,7 +36,7 @@ const Footer = () => {
                 ما را در شبکه های اجتماعی دنبال کنید!
               </div>
               <div className="flex flex-row gap-3 justify-between items-center my-1">
-                {/* social medias */}
+                {/* social medias, link them to social medias */}
                 <Image
                   width="15"
                   height="15"
