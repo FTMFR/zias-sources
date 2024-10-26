@@ -121,6 +121,10 @@ body {
   background-color: var(--gray200);
 }
 
+.border-btns{
+  border: 1px solid var(--primary100);
+}
+
 .container {
   width: 90%;
   text-align: center;
@@ -185,5 +189,4 @@ body {
 
 .activeProduct{
   height: 260px !important;
-  
 }
