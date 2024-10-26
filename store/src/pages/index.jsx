@@ -1,14 +1,11 @@
 import Banner from "../components/Banner/Banner";
 import Blogs from "../components/Blogs/Blogs";
-import SeeMoreBtn from "../components/Btns/SeeMoreBtn";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import ProductsCart from "../components/Product/ProductsCart";
 import SearchBox from "../components/SearchBox/SearchBox";
 import SliderImg from "../components/Slider/SliderImg";
-import Image from "next/image";
-import SliderProducts from "../components/Slider/SliderProducts";
-import SliderBlogs from "../components/Slider/SliderBlogs";
+import Sliders from "../components/Slider/Sliders";
 
 function HomePage() {
   return (
@@ -26,10 +23,11 @@ function HomePage() {
         {/* divider */}
         <div className="divider"></div>
         {/* add product list component */}
-        <SliderProducts />
+        <Sliders Component={ProductsCart} totalItems={6} width='w-44' />;
         <div className="divider"></div>
         {/* add blog list component */}
-        <SliderBlogs />
+        <Sliders Component={Blogs} totalItems={6} width='w-64' />;
+        {/* <SliderBlogs /> */}
       </div>
       {/* add footer component */}
       <Footer />
