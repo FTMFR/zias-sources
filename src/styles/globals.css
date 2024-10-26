@@ -81,7 +81,46 @@ body {
   --lg: 992px;
 }
 
-/*  */
+.bg-gray100 {
+  background-color: var(--gray100);
+}
+
+.bg-gray300 {
+  background-color: var(--gray300);
+}
+
+.bg-brand-primary {
+  background-color: var(--primary75);
+}
+
+.text-14B {
+  font-size: var(--B14);
+}
+
+.border-gray-slider {
+  border: var(--gray500) 2px solid;
+}
+
+.border-gray300 {
+  border: 2px solid var(--gray300);
+}
+
+.text-gray500 {
+  color: var(--gray500);
+}
+
+.searchBoxText {
+  color: var(--gray600);
+}
+
+.searchBoxZias {
+  color: var(--primary75);
+}
+
+.searchBox {
+  background-color: var(--gray200);
+}
+
 .container {
   width: 90%;
   text-align: center;
@@ -100,33 +139,7 @@ body {
   color: var(--primary75);
 }
 
-.bg-brand-primary {
-  background-color: var(--primary75);
-}
-
-.text-14B {
-  font-size: var(--B14);
-}
-
-/* search box */
-
-.searchBoxText {
-  color: var(--gray600);
-}
-
-.searchBoxZias {
-  color: var(--primary75);
-}
-
-.searchBox {
-  background-color: var(--gray200);
-}
-
 /* slider component styles */
-.border-gray-slider {
-  border: var(--gray500) 2px solid;
-}
-
 .circle {
   width: 8px;
   height: 8px;
@@ -145,13 +158,9 @@ body {
   border: 1px solid var(--gray500);
 }
 
-/* product cart component */
-.border-gray300 {
-  border: 2px solid var(--gray300);
-}
-
-.text-gray500 {
-  color: var(--gray500);
+.divider-sm {
+  width: 100px;
+  border: 1px solid var(--primary75);
 }
 
 /* see more btn component styles */
@@ -163,17 +172,4 @@ body {
   border: 1px solid var(--primary200);
   border-radius: 5px;
   font-size: var(--R10);
-}
-
-.bg-gray100 {
-  background-color: var(--gray100);
-}
-
-.bg-gray300 {
-  background-color: var(--gray300);
-}
-
-.divider-sm {
-  width: 100px;
-  border: 1px solid var(--primary75);
 }
