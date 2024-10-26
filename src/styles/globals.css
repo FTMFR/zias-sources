@@ -168,3 +168,12 @@ body {
 .bg-gray100 {
   background-color: var(--gray100);
 }
+
+.bg-gray300 {
+  background-color: var(--gray300);
+}
+
+.divider-sm {
+  width: 100px;
+  border: 1px solid var(--primary75);
+}

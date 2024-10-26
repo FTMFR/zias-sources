@@ -1,6 +1,7 @@
 import Banner from "../components/Banner/Banner";
 import Blogs from "../components/Blogs/Blogs";
 import SeeMoreBtn from "../components/Btns/SeeMoreBtn";
+import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
 import ProductsCart from "../components/Product/ProductsCart";
 import SearchBox from "../components/SearchBox/SearchBox";
@@ -22,7 +23,7 @@ function HomePage() {
         <SliderImg />
         {/* divider */}
         <div className="divider"></div>
-        {/* product list component */}
+        {/* add product list component */}
         <div className="flex flex-col mt-2">
           <div className="flex flex-row justify-between">
             <h1 className="font-bold text-[16px]">محصولات جدید</h1>
@@ -47,7 +48,7 @@ function HomePage() {
           </div>
         </div>
         <div className="divider"></div>
-        {/* blog list component */}
+        {/* add blog list component */}
         <div className="flex flex-col my-2">
           <div className="flex flex-row justify-between">
             <h1 className="font-bold text-[16px]">مقالات جدید</h1>
@@ -71,6 +72,8 @@ function HomePage() {
           </div>
         </div>
       </div>
+      {/* add footer component */}
+      <Footer />
     </>
   );
 }
