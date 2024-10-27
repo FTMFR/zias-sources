@@ -108,6 +108,9 @@ body {
 .text-gray500 {
   color: var(--gray500);
 }
+.text-gray700 {
+  color: var(--gray700);
+}
 
 .searchBoxText {
   color: var(--gray600);
@@ -121,7 +124,7 @@ body {
   background-color: var(--gray200);
 }
 
-.border-btns{
+.border-btns {
   border: 1px solid var(--primary100);
 }
 
@@ -187,6 +190,6 @@ body {
   scrollbar-width: none;
 }
 
-.activeProduct{
+.activeProduct {
   height: 260px !important;
 }

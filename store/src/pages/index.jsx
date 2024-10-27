@@ -2,6 +2,8 @@ import Banner from "../components/Banner/Banner";
 import Blogs from "../components/Blogs/Blogs";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
+import LoginModal from "../components/LoginModal/LoginModal";
+import Signup from "../components/LoginModal/signup";
 import ProductsCart from "../components/Product/ProductsCart";
 import SearchBox from "../components/SearchBox/SearchBox";
 import SliderImg from "../components/Slider/SliderImg";
@@ -23,10 +25,10 @@ function HomePage() {
         {/* divider */}
         <div className="divider"></div>
         {/* add product list component */}
-        <Sliders Component={ProductsCart} totalItems={6} width='w-44' />;
+        <Sliders Component={ProductsCart} totalItems={6} width="w-44" />;
         <div className="divider"></div>
         {/* add blog list component */}
-        <Sliders Component={Blogs} totalItems={6} width='w-64' />;
+        <Sliders Component={Blogs} totalItems={6} width="w-64" />;
         {/* <SliderBlogs /> */}
       </div>
       {/* add footer component */}
