@@ -25,10 +25,10 @@ function HomePage() {
         {/* divider */}
         <div className="divider"></div>
         {/* add product list component */}
-        <Sliders Component={ProductsCart} totalItems={6} width="w-44" />;
+        <Sliders Component={ProductsCart} totalItems={6} width="w-44" />
         <div className="divider"></div>
         {/* add blog list component */}
-        <Sliders Component={Blogs} totalItems={6} width="w-64" />;
+        <Sliders Component={Blogs} totalItems={6} width="w-64" />
         {/* <SliderBlogs /> */}
       </div>
       {/* add footer component */}
