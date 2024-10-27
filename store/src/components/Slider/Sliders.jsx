@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import SeeMoreBtn from "../Btns/SeeMoreBtn"; // Assuming you have a SeeMoreBtn component
+import Image from "next/image";
 
 const Sliders = ({ Component, totalItems, width }) => {
   const [centerIndex, setCenterIndex] = useState(0);
@@ -56,7 +57,7 @@ const Sliders = ({ Component, totalItems, width }) => {
         }
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
-        <img src="/images/arrow-left.svg" alt="arrow-left" />
+        <Image height={25} width={25} src="/images/arrow-left.svg" alt="arrow-left" />
       </button>
       <button
         onClick={() =>
@@ -67,7 +68,7 @@ const Sliders = ({ Component, totalItems, width }) => {
         }
         className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
-        <img src="/images/arrow-right.svg" alt="arrow-right" />
+        <Image height={25} width={25} src="/images/arrow-right.svg" alt="arrow-right" />
       </button>
     </div>
   );
