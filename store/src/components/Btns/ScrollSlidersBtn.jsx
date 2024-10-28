@@ -1,15 +1,15 @@
 import React from "react";
 
-const ScrollSlidersBtn = () => {
+const ScrollSlidersBtn = ({count, indexOfActive}) => {
   return (
     <div className="flex gap-1.5">
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle active"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
-      <div className="circle"></div>
+      {Array(count)
+        .fill()
+        .map((_, index) => {
+          return <div className={`circle ${indexOfActive === index ? 'active': ''}`} key={index}></div>;
+        })}
+
+      {/* <div className="circle active"></div> */}
     </div>
   );
 };

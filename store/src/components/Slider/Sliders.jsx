@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import SeeMoreBtn from "../Btns/SeeMoreBtn"; // Assuming you have a SeeMoreBtn component
+import SeeMoreBtn from "../Btns/SeeMoreBtn"; 
 import Image from "next/image";
 
 const Sliders = ({ Component, totalItems, width }) => {
@@ -7,10 +7,10 @@ const Sliders = ({ Component, totalItems, width }) => {
   const containerRef = useRef(null);
 
   const handleScroll = () => {
-    const scrollLeft = containerRef.current.scrollLeft; // Get the current scroll position
-    const itemWidth = containerRef.current.children[0].offsetWidth; // Get the width of the first item
-    const currentIndex = Math.round(scrollLeft / itemWidth); // Calculate the current index
-    setCenterIndex(currentIndex); // Update the center index
+    const scrollLeft = containerRef.current.scrollLeft;
+    const itemWidth = containerRef.current.children[0].offsetWidth;
+    const currentIndex = Math.round(scrollLeft / itemWidth);
+    setCenterIndex(currentIndex);
   };
 
   useEffect(() => {
@@ -57,7 +57,12 @@ const Sliders = ({ Component, totalItems, width }) => {
         }
         className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
-        <Image height={25} width={25} src="/images/arrow-left.svg" alt="arrow-left" />
+        <Image
+          height={25}
+          width={25}
+          src="/images/arrow-left.svg"
+          alt="arrow-left"
+        />
       </button>
       <button
         onClick={() =>
@@ -68,7 +73,12 @@ const Sliders = ({ Component, totalItems, width }) => {
         }
         className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
       >
-        <Image height={25} width={25} src="/images/arrow-right.svg" alt="arrow-right" />
+        <Image
+          height={25}
+          width={25}
+          src="/images/arrow-right.svg"
+          alt="arrow-right"
+        />
       </button>
     </div>
   );
