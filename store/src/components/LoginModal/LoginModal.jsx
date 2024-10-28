@@ -10,11 +10,19 @@ const LoginModal = ({ toggleModal, onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 top-0 right-0 bg-black bg-opacity-70" id="modal-overlay" onClick={handleBackgroundClick}>
+    <div
+      className="fixed inset-0 z-50 top-0 right-0 bg-black bg-opacity-70"
+      id="modal-overlay"
+      onClick={handleBackgroundClick}
+    >
       <div className="relative flex items-center justify-center w-[310px] h-[225px] shadow-lg">
-        <div className="absolute flex flex-col justify-between items-start bg-white gap-2 p-2 mx-auto rounded-[10px] w-[310px] h-[293px] shadow-lg top-40 right-[20%] text-right">
+        <div
+          className="absolute flex flex-col justify-between items-start bg-white gap-2 p-2 mx-auto rounded-[10px] w-[310px] h-[293px] shadow-lg top-40 right-[20%] text-right"
+          onClick={(e) => e.stopPropagation()}
+        >
           <div className="w-[280px] h-full p-2 flex flex-col gap-2 items-start justify-between">
             <div className="flex justify-between items-center w-[280px]">
+              {/* if codes doesn't fill correctly, should show error and the ok button shouldn't work! */}
               <h1 className="text-[16px] font-bold">کد ارسالی را وارد کنید.</h1>
               {/* should clode when click on it */}
               <Image
