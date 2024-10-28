@@ -50,7 +50,7 @@ const SliderImg = () => {
 
   return (
     <div className="relative">
-      <div className="overflow-hidden w-[391px]">
+      <div className="overflow-hidden w-[391px] mb-2">
         {/* slider should be infinit, after last slide goes to first and before first slide goes to last slide */}
         <div
           ref={containerRef}
@@ -68,7 +68,7 @@ const SliderImg = () => {
                 height={340}
                 src={item.img}
                 alt="img-slider"
-                className="w-[391px] object-fill h-[340px]"
+                className="w-[391px] object-fill h-[340px] rounded-[10px]"
               />
             </div>
           ))}
