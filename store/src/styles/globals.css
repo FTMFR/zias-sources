@@ -193,3 +193,11 @@ body {
 .activeProduct {
   height: 260px !important;
 }
+
+
+.login-button{
+  border: 1px solid var(--gray700);
+  color: var(--gray700);
+  border-radius: 5px;
+  margin-left: 10px;
+}
