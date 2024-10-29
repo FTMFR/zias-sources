@@ -10,10 +10,7 @@ const SearchBox = () => {
         src="/images/Search 1.svg"
         alt="search icon" 
       />
-      <div className="flex gap-1 searchBoxText">
-        جستجو در
-        <div className="searchBoxZias font-bold"> زی‌آث</div>
-      </div>
+      <input type="text" value="" placeholder="جستجو در زی‌آث" className="flex gap-1 searchBoxText w-full h-full bg-transparent outline-none" />
     </div>
   );
 };
